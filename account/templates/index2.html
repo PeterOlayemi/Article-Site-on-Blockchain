@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PACMAN Home</title>
+    <link rel="icon" type="image/png" href="http://127.0.0.1:8000/media/images/20221008_091847-removebg-preview_HO1cVr5.png">
+</head>
+
+{% extends "base.html" %}
+{% load bootstrap3 %}
+
+<body>
+<div class="col-lg-12">
+{% block header %}
+{% for image4 in image4 %}
+<!-- Carousel
+    ================================================== -->
+<div style="max-width: 100%;" id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <p style="text-align:left"><img src="{{image4.image4.url}}" width="80"><br><br><i>UNCATEGORIZED / BY PETER OLAYEMI</i><br>
+                    <h1 style="text-align:left">Ten Steps to Your First Blockchain Application</h1>
+                    <br><br>Brought To You By PeterCodes.Inc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endfor%}
+<!-- /.carousel -->
+{% endblock header %}
+
+{% block content %}
+<div class="col-lg-12 alert alert-info alert-dismissible" style="text-align:center">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <p><b>Hey There!!!</b> Your Comment Has Successfully Been Added<br>Thank You</p>
+</div>
+<p class="first" style="padding-left: 50px;">After discovering the potential transformative 
+power of blockchain for business, you’re probably eager to find out 
+what steps you need to take toward implementing it in 
+your business and industry. Well, you’ve come to the right place. 
+In this chapter, I present ten steps to take to your first blockchain application.</p>
+<br><br>
+<h2 style="text-align: center;"><u><b>Determining How Blockchain Fits in Your Industry</b></u></h2>
+<p style="padding-left: 50px;">As you find out more about blockchain, you may discover how it 
+already impacts your industry, or certain applications of blockchain may seem obvious to you 
+as solutions for addressing current challenges. If you’re uncertain of whether blockchain has a 
+place in your industry, answer the following questions:</p>
+<p style="padding-left: 100px;">» Does my business network need to manage contractual 
+relationships?<br>» Do we need to track transactions that involve more than two 
+parties?<br>
+» Is the current system overly complex or costly, possibly due 
+to the need for intermediaries or a central point of control?<br>
+» Can the network benefit from increased trust, transparency, 
+and accountability in recordkeeping?<br>
+» Is the current system prone to errors due to manual 
+processes or duplication of effort?<br>
+» Is the current transaction system vulnerable to fraud, 
+cyberattack, and human error?</p>
+<p style="padding-left: 50px;">If you answered “yes” to two or more of these questions, 
+blockchain can likely benefit your industry.</p>
+<br><br>
+<h2 style="text-align: center;"><u><b>Identifying Speed Bumps in Business Processes</b></u></h2>
+<p style="padding-left: 50px;">Examine your current business processes for inefficiencies, 
+particularly steps in the process that are prone to delays, frustration, 
+errors, and duplication of effort. The questions in the preceding 
+section are likely to point you in the right direction. A more general question to ask is this: 
+“What challenges do I currently face 
+in my transaction networks?”</p>
+<br>
+<div align="center">
+{% for image2 in image2 %}
+<img src="{{image2.image2.url}}" width="75%">
+{%endfor%}
+</div>
+<br><br>
+<h2 style="text-align: center;"><u><b>Determining How Blockchain Can Help</b></u></h2>
+<p style="padding-left: 50px;">After identifying challenges in your transaction network, 
+consider various attributes of blockchain that can address the inefficiencies, costs, and other issues. For example, if a lack of trust is 
+causing friction, blockchain’s shared ledger can provide increased 
+visibility into transaction and asset histories to improve trust.
+If business agreements or rules cause delays, smart contracts may 
+be the solution. The goal here is to determine how blockchain can 
+help overcome specific challenges.</p>
+<br><br>
+<h2 style="text-align: center;"><u><b>Choosing an Appropriate Use Case</b></u></h2>
+<p style="padding-left: 50px;">When choosing a use case, make sure it’s a good fit for what 
+you’re trying to accomplish. Choose something that adds real 
+value as opposed to something that could be achieved just as well 
+using a mature technology.<br>
+Your use case needs to pass the following four acid tests:</p>
+<p style="padding-left: 100px;">» Consensus: Does agreement that each transaction is valid 
+across the business network provide some benefit?<br>
+» Provenance: Is maintenance of a complete audit trail 
+important?<br>
+» Immutability: Is it important that the train of transactions is 
+tamper-evident?<br>
+» Finality: Is there a need for an agreed “system of record” 
+across the business network?</p>
+<p style="padding-left: 50px;">Try to choose a use case that’s organizationally less complex, so 
+you’re not overwhelmed with complexity during your maiden 
+voyage with blockchain.</p>
+<br><br>
+<h2 style="text-align: center;"><u><b>Determining the Goal of Your Blockchain Network</b></u></h2>
+<p style="padding-left: 50px;">After choosing an appropriate use case, outline a clear and 
+measurable goal for your first project. What do you hope to solve 
+or improve by using blockchain technology? What can you use to 
+measure the success of your first project in meeting that goal? 
+Do  you want to reduce resolution times of disputes? Speed up 
+claims processing? Free up capital flow? Reduce fraud in your 
+network? These are just a few objectives a blockchain network can 
+help achieve.</p>
+<br><br>
+<h2 style="text-align: center;"><u><b>Identifying Dependencies</b></u></h2>
+<p style="padding-left: 50px;">When you have an appropriate use case in mind, consider what 
+else you need  — in addition to internal resources you already 
+have — to start on your first blockchain project. Do you need a 
+services partner to help deploy the first project? Do you need a 
+platform or fabric that enables you to meet certain regulatory or 
+compliance objectives?<br>
+Because transaction processing is becoming a team sport, a 
+blockchain network is most successful when multiple parties 
+are involved and becomes even more valuable and efficient as 
+the blockchain grows. Enterprises need to learn a new model of 
+ecosystem-based processes so it’s important to start now.</p>
+<br>
+<div align="center">
+{% for image5 in image5 %}
+<img src="{{image5.image5.url}}" width="75%">
+{%endfor%}
+</div>
+<br><br>
+<h2 style="text-align: center;"><u><b>Choosing a Blockchain Provider and Platform</b></u></h2>
+<p style="padding-left: 50px;">Choose a provider and platform that best fit your industry and 
+business needs. As you compare the suitability of different providers and platforms, 
+seek answers to the following questions:</p>
+<p style="padding-left: 100px;">» Do you require a permissioned network?<br>
+» Do you need to know the identities in your business 
+network — for example, to adhere to regulations such as 
+anti-money laundering (AML) or know your customer (KYC)?<br>
+» Do you have frequent exchanges with others that could be 
+automated and preprogrammed, freeing up valuable time 
+and resources?<br>
+» Would you benefit from transaction resolution in minutes 
+rather than days or weeks?</p>
+<br><br>
+<h2 style="text-align: center;"><u><b>Developing and Deploying Smart Contracts</b></u></h2>
+<p style="padding-left: 50px;">The next step in your first blockchain project is to develop and 
+deploy a blockchain application and network. For guidance 
+on how to set up a blockchain network and start coding, visit 
+<a href="http://ibm.biz/QuickStartGuide" style="color:crimson">HERE</a></p>
+<br><br>
+<h2 style="text-align: center;"><u><b>Testing and Fine-Tuning Your Application and Network</b></u></h2>
+<p style="padding-left: 50px;">The “final” stage in creating and deploying your first blockchain 
+application is actually an ongoing process (hence why I call it the 
+“final” stage in quotation marks). Monitor your application and 
+network and capture learning to make improvements and expand 
+into a wider deployment.<br>
+For help in deploying, optimizing, or scaling your application, see 
+how the IBM Garage can help you: <a href="http://ibm.com/blockchain/" style="color:crimson">HERE</a></p>
+<br><br>
+</div>
+<div class="col-lg-3">
+<p class="martins" style="text-align:center"><i><tt>Pacman Stories</tt></i></p>
+</div>
+<div class="col-lg-3">
+<p class="martins" style="text-align:center"><i><tt>BlockChain</tt></i></p>
+</div>
+<div class="col-lg-2">
+<p class="martins" style="text-align:center"><i><tt>Ten Steps</tt></i></p>
+</div>
+<div class="col-lg-1">
+{% for image6 in image6 %}
+<a href="http://twitter.com"><img src="{{image6.image6.url}}" width="40"></a>
+{%endfor%}
+</div>
+<div  class="col-lg-1">
+{% for image7 in image7 %}
+<a href="http://linkedin.com"><img src="{{image7.image7.url}}" width="40"></a>
+{%endfor%}
+</div>
+<div  class="col-lg-1">
+{% for image8 in image8 %}
+<a href="http://whatsapp.com"><img src="{{image8.image8.url}}" width="40"></a>
+{%endfor%}
+</div>
+<div class="col-lg-1">
+{% for image9 in image9 %}
+<a href="http://facebook.com"><img src="{{image9.image9.url}}" width="40"></a>
+{%endfor%}
+</div><br><br><br><hr><br>
+<div class="col-lg-12">
+<h2 style="padding-left:50px;"><b>Comments</b></h2><br>
+{% for comment in comment %}
+<div style="padding-left:100px">
+<b style="font-size: 25px;">{{comment.name|title}}</b><br>
+<i>{{comment.date}}</i><br><br>
+<div style="font-size:25px">{{comment.comment}}</div><br><hr>
+</div>
+{% empty %}
+<h2 align="center">There Are No Comments At The Moment<br><hr><br></h2>
+{%endfor%}
+</div>
+<div class="col-lg-12" align="center">
+<div class="martin">
+<br><h2><b>Leave A Reply</b></h2><br>
+<p>Your Email Address Will Not Be Published<br></p>
+<form method="post" class="form" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button class="btn btn-lg btn-success">Post Comment</button>
+    {% endbuttons %} 
+
+</form>
+<hr><br></div></div>
+<div class="col-lg-6">
+<br><h2><b>Get Updates</b></h2><br>
+<p>New Updates Will Be Sent To Your Email Address<br></p>
+<form method="post" class="form" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    {% bootstrap_form cform %}
+    {% buttons %}
+        <button class="btn btn-lg btn-success">Get</button>
+    {% endbuttons %} 
+
+</form>
+<hr><br></div>
+<div class="col-lg-12 martina" style="color:white">
+<div class="col-lg-3">
+<h3><b>PACMAN</b></h3><br>
+<br>Owned by Peter O<br> Another web dev skill practice including web hosting
+</div>
+<div class="col-lg-3">
+<h3>CONTACT INFO </h3>
+<p>Address : Michael Street, Mushin, Lagos, Nigeria</p>
+<p>Customer Support : <a href="tel:08030896456">08030896456</a></p>
+<p>Email : <a href="mailto:helpdesk@pacman.com">helpdesk@pacman.com</a></p>
+</div>
+<div class="col-lg-3">
+<ul>
+<h3>POSTS</h3>
+<li><a href="#">Fuck Haters</a></li>
+<li><a href="#">Blockchain Knowledge</a></li>
+<li><a href="#">Ponzi Scam</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<ul>
+<h3>COMPANY</h3>
+<li><a href="#"> About Company</a></li>
+<li><a href="#">Get In Touch</a><br>
+<li><a href="https://play.google.com/store/apps/details?id=com.twitter.android">PlayStore</a></li>
+</ul>
+<br><br><br><br><br><br><br><br>
+</div>
+{% endblock content %}
+
+</body>
+</html>
