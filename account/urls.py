@@ -5,8 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('blockchain/', views.index, name='index'),
-    path('block-chain/', views.index2, name='index2'),
-    path('block--chain/', views.index3, name='index3'),
+    path('success/', views.SuccessView, name='success'),
 ]
 
 if settings.DEBUG:

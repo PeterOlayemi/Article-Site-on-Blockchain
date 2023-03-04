@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PACMAN Home</title>
+    <link rel="icon" type="image/png" href="http://127.0.0.1:8000/media/images/20221008_091847-removebg-preview_HO1cVr5.png">
+</head>
+
+{% extends "base.html" %}
+
+<body>
+{% block content %}
+
+<div class="col-lg-12 alert alert-info alert-dismissible" style="font-size: 20px;">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <p>Hey There!!! You Have Successfully Applied For Updates. <br>New Post Updates Will Be Sent To Your Email</p><br>
+    <p><a href="{% url 'index' %}">Go To Home</a></p>
+</div>
+
+{% endblock content %}
+
+</body>
+</html>

@@ -6,7 +6,6 @@
 </head>
 
 {% extends "base.html" %}
-{% load bootstrap3 %}
 
 <body>
 <div class="col-lg-12">
@@ -21,7 +20,7 @@
                 <div class="carousel-caption">
                     <p style="text-align:left"><img src="{{image4.image4.url}}" width="80"><br><br><i>UNCATEGORIZED / BY PETER OLAYEMI</i><br>
                     <h1 style="text-align:left">Ten Steps to Your First Blockchain Application</h1>
-                    <br><br>Brought To You By PeterCodes.Inc</p>
+                    <br><br>Brought To You By Peter Olayemi</p>
                 </div>
             </div>
         </div>
@@ -198,17 +197,15 @@ how the IBM Garage can help you: <a href="http://ibm.com/blockchain/" style="col
 <h2 align="center">There Are No Comments At The Moment<br><hr><br></h2>
 {%endfor%}
 </div>
-<div class="col-lg-12" align="center">
+<div class="col-lg-12">
 <div class="martin">
 <br><h2><b>Leave A Reply</b></h2><br>
 <p>Your Email Address Will Not Be Published<br></p>
 <form method="post" class="form" enctype="multipart/form-data">
 
     {% csrf_token %}
-    {% bootstrap_form form %}
-    {% buttons %}
-        <button class="btn btn-lg btn-success">Post Comment</button>
-    {% endbuttons %} 
+    {{ form.as_p }}
+    <button class="btn btn-lg btn-success">Post Comment</button>
 
 </form>
 <hr><br></div></div>
@@ -218,10 +215,8 @@ how the IBM Garage can help you: <a href="http://ibm.com/blockchain/" style="col
 <form method="post" class="form" enctype="multipart/form-data">
 
     {% csrf_token %}
-    {% bootstrap_form cform %}
-    {% buttons %}
-        <button class="btn btn-lg btn-success">Get</button>
-    {% endbuttons %} 
+    {{ cform.as_p }}
+    <button class="btn btn-lg btn-success">Get</button>
 
 </form>
 <hr><br></div>
