@@ -2,15 +2,13 @@
 <html>
 <head>
     <title>PACMAN Home</title>
-    <link rel="icon" type="image/png" href="http://127.0.0.1:8000/media/images/20221008_091847-removebg-preview_HO1cVr5.png">
 </head>
 
 {% extends "base.html" %}
-
+{% load static %}
 <body>
 <div class="col-lg-12">
 {% block header %}
-{% for image4 in image4 %}
 <!-- Carousel
     ================================================== -->
 <div style="max-width: 100%;" id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -18,7 +16,7 @@
         <div class="item active">
             <div class="container">
                 <div class="carousel-caption">
-                    <p style="text-align:left"><img src="{{image4.image4.url}}" width="80"><br><br><i>UNCATEGORIZED / BY PETER OLAYEMI</i><br>
+                    <p style="text-align:left"><img src="{% static 'cal.png' %}" width="15%" height="15%"><br><br><i>UNCATEGORIZED / BY PETER OLAYEMI</i><br>
                     <h1 style="text-align:left">Ten Steps to Your First Blockchain Application</h1>
                     <br><br>Brought To You By Peter Olayemi</p>
                 </div>
@@ -26,7 +24,6 @@
         </div>
     </div>
 </div>
-{%endfor%}
 <!-- /.carousel -->
 {% endblock header %}
 
@@ -65,9 +62,7 @@ section are likely to point you in the right direction. A more general question 
 in my transaction networks?”</p>
 <br>
 <div align="center">
-{% for image2 in image2 %}
-<img src="{{image2.image2.url}}" width="75%">
-{%endfor%}
+<img src="{% static 'q2.jpg' %}" width="50%" height="30%">
 </div>
 <br><br>
 <h2 style="text-align: center;"><u><b>Determining How Blockchain Can Help</b></u></h2>
@@ -121,9 +116,7 @@ the blockchain grows. Enterprises need to learn a new model of
 ecosystem-based processes so it’s important to start now.</p>
 <br>
 <div align="center">
-{% for image5 in image5 %}
-<img src="{{image5.image5.url}}" width="75%">
-{%endfor%}
+<img src="{% static 'q1.jpg' %}" width="50%" height="30%">
 </div>
 <br><br>
 <h2 style="text-align: center;"><u><b>Choosing a Blockchain Provider and Platform</b></u></h2>
@@ -166,24 +159,16 @@ how the IBM Garage can help you: <a href="http://ibm.com/blockchain/" style="col
 <p class="martins" style="text-align:center"><i><tt>Ten Steps</tt></i></p>
 </div>
 <div class="col-lg-1">
-{% for image6 in image6 %}
-<a href="http://twitter.com"><img src="{{image6.image6.url}}" width="40"></a>
-{%endfor%}
+<a href="http://twitter.com"><img src="{% static 'tw.png' %}" width="50%" height="30%"></a>
 </div>
 <div  class="col-lg-1">
-{% for image7 in image7 %}
-<a href="http://linkedin.com"><img src="{{image7.image7.url}}" width="40"></a>
-{%endfor%}
+<a href="http://linkedin.com"><img src="{% static 'li.png' %}" width="50%" height="30%"></a>
 </div>
 <div  class="col-lg-1">
-{% for image8 in image8 %}
-<a href="http://whatsapp.com"><img src="{{image8.image8.url}}" width="40"></a>
-{%endfor%}
+<a href="http://whatsapp.com"><img src="{% static 'wa.png' %}" width="50%" height="30%"></a>
 </div>
 <div class="col-lg-1">
-{% for image9 in image9 %}
-<a href="http://facebook.com"><img src="{{image9.image9.url}}" width="40"></a>
-{%endfor%}
+<a href="http://facebook.com"><img src="{% static 'fb.png' %}" width="50%" height="30%"></a>
 </div><br><br><br><hr><br>
 <div class="col-lg-12">
 <h2 style="padding-left:50px;"><b>Comments</b></h2><br>

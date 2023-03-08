@@ -14,17 +14,17 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-{% for image1 in image1 %}{% for image2 in image2 %}
+        
+  {% load static %}
 
     <style>
         .martins {background-color:rgba(34, 32, 32, 0.245); border-radius: 10px;}
         .martin {background-color:rgba(220, 217, 217, 0.245); border-radius: 20px;}
-        .martina {background-image: linear-gradient(rgba(160, 51, 218, 0.9), rgba(0, 0, 0, 0.9) ), url('{{ image2.image2.url }}'); border-radius: 20px;}
+        .martina {background-image: linear-gradient(rgba(160, 51, 218, 0.9), rgba(0, 0, 0, 0.9) ), url("{% static 'q2.jpg' %}"); border-radius: 20px;}
 
         .carousel .item {
             height: 550px;
-            background-image: linear-gradient(rgba(184, 22, 106, 0.9), rgba(0, 0, 0, 0.9) ), url('{{ image1.image1.url }}');      
+            background-image: linear-gradient(rgba(184, 22, 106, 0.9), rgba(0, 0, 0, 0.9) ), url("{% static 'q2.jpg' %}");      
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -50,8 +50,6 @@
         }
     </style>
 
-{%endfor%}{%endfor%}
-
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -63,7 +61,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <div class="navbar-brand">{% for image3 in image3 %}<img src="{{ image3.image3.url }}" width="50">{%endfor%}</div>
+            <div class="navbar-brand"><img src="{% static 'logo.png' %}" width="130%" height="130%"></div>
             <a class="navbar-brand" style="color:white; font-size: 30px;" href="#">PacMan</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
